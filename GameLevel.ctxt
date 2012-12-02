@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.params=game
+comment0.target=GameLevel(Game)
+comment0.text=\r\n\ Initialise\ a\ new\ game\ level.\r\n\ @param\ game\ the\ game\ to\ which\ this\ level\ belongs\r\n
+comment1.params=
+comment1.target=void\ populate()
+comment1.text=\r\n\ Populate\ the\ world\ with\ bodies.\r\n
+comment2.params=
+comment2.target=boolean\ isCompleted()
+comment2.text=\r\n\ Has\ this\ level\ been\ completed?\r\n
+comment3.params=
+comment3.target=void\ putPlayerAtStart()
+comment3.text=\r\n\ Set\ player\ attributes\ (position,\ velocity,\ etc)\ to\ the\ approriate\ start\r\n\ values\ for\ this\ level.\ This\ method\ may\ be\ called,\ for\ example,\ when\ play\r\n\ starts\ or\ after\ the\ player\ has\ lost\ a\ life.\r\n
+comment4.params=
+comment4.target=void\ clearLevel()
+comment4.text=\r\n\ Destroy\ all\ bodies\ except\ those\ needed\ for\ the\ next\ level.\r\n\ This\ version\ destroys\ all\ bodies\ except\ the\ player.\r\n\ Override\ in\ sub-classes\ as\ necessary.\r\n
+numComments=5

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=game
+comment0.target=YinYang(Game)
+comment0.text=Initialise\ a\ new\ star,\ @param\ g\ The\ game,
+comment1.params=collide
+comment1.target=void\ collide(city.soi.platform.CollisionEvent)
+comment1.text=The\ collision\ method\ that\ checks\ if\ the\ other\ object\ is\ a\ player\ object
+numComments=2

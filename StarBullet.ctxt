@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.params=game
+comment0.target=StarBullet(Game)
+comment0.text=Initialise\ a\ new\ star,\ @param\ g\ The\ game,
+comment1.params=collide
+comment1.target=void\ collide(city.soi.platform.CollisionEvent)
+comment1.text=checks\ for\ collision\ with\ other\ bodies\ *
+comment2.params=
+comment2.target=void\ destroyBullet()
+comment2.text=destroys\ bullet\ after\ a\ certain\ distance\ *
+numComments=3

@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.params=game
+comment0.target=Door(Game)
+comment0.text=\r\n\ Initialise\ a\ new\ game\ level.\r\n\ @param\ game\ the\ game\ to\ which\ this\ level\ belongs\r\n
+comment1.params=next
+comment1.target=void\ collide(city.soi.platform.CollisionEvent)
+comment1.text=Checks\ if\ it\ collided\ with\ player\ object\ and\ checks\ if\ lives\ is\ equal\ to\ 0
+numComments=2

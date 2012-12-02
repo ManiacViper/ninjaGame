@@ -1,0 +1,10 @@
+ken
+0
+kestan
+750
+brian
+1500
+james
+250
+john
+3750
