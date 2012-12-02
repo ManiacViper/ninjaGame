@@ -27,6 +27,7 @@
 				<pathelement location="${lib}/engine-3_1.jar" />
 			</classpath>
 		</javac>
+		<copydir src="${lib}" dest="${build}" />
 		<copydir src="${images}" dest="${build}/images" />
 		<copydir src="${sound}" dest="${build}/sound" />
 	</target>
