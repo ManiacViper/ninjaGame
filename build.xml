@@ -1,32 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project name="Radio" basedir=".">
-	
+
 	<description>
 		Radio system applet
 	</description>
-    
-  <!-- set global properties for this build -->
-  <property name="src" location="src"/>
-  <property name="build" location="build"/>
-  <property name="bin" location="bin" />
 
-  <!-- Create the build directory structure used by compile -->
-  <target name="init">
-    <tstamp/><!-- Create the time stamp -->    
-    <mkdir dir="${build}"/>
-  </target>
+	<!-- set global properties for this build -->
+	<property name="src" location="src"/>
+	<property name="build" location="build"/>
+	<property name="bin" location="bin" />
+	<property name="lib" location="lib" />
+	<property name="images" location="images" />	
+	<property name="sound" location="sound" />	
 
-  <!-- Compile the java code from ${src} into ${build} -->
-  <target name="compile" depends="init" description="compile the source and copy html file to build folder">
-    <javac srcdir="${src}" destdir="${build}"/>
-    <copy file="${src}/radio.html" todir="${build}" />
-	<copy file="${src}/thread/yes.au" todir="${build}/thread" />
-  </target>
-  
-  <!-- Delete the ${build} and ${bin} directory trees -->
-  <target name="clean" description="delete all .class files" >
-    <delete dir="${build}"/>
-    <delete dir="${bin}"/>    
-  </target>
-  
+	<!-- Create the build directory structure used by compile -->
+	<target name="init">
+		<tstamp/>
+		<!-- Create the time stamp -->
+		<mkdir dir="${build}"/>
+	</target>
+
+	<!-- Compile the java code from ${src} into ${build} -->
+	<target name="compile" depends="init" description="compile the source and copy html file to build folder">
+		<javac srcdir="${src}" destdir="${build}">
+			<classpath>
+				<pathelement location="${lib}/engine-3_1.jar" />
+			</classpath>
+		</javac>
+		<copydir src="${images}" dest="${build}/images" />
+		<copydir src="${sound}" dest="${build}/sound" />
+	</target>
+
+	<!-- Delete the ${build} and ${bin} directory trees -->
+	<target name="clean" description="delete all build files" >
+		<delete dir="${build}"/>
+		<delete dir="${bin}"/>
+	</target>
+
 </project>
