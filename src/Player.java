@@ -5,9 +5,12 @@
 /**********************************************************************************************/
 
 /** Import game engine library class's */
-import city.soi.platform.*;
-
 import org.jbox2d.common.Vec2;
+
+import city.soi.platform.Actor;
+import city.soi.platform.PolygonShape;
+import city.soi.platform.StepEvent;
+import city.soi.platform.StepListener;
 
 /** This is a specialised actor class that can be controlled, it counts the lives 
  *  of the player object remaining and counts the amount of stars collected,

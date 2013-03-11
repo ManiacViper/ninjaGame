@@ -5,21 +5,29 @@
 /**********************************************************************************************/
 
 /** Import game engine library class's */
-import java.awt.*;
-import java.awt.event.ActionListener;
+import java.awt.Dimension;
+import java.awt.Font;
 import java.awt.event.ActionEvent;
-
-
-
-import java.io.*;
+import java.awt.event.ActionListener;
+import java.io.BufferedReader;
+import java.io.BufferedWriter;
+import java.io.DataInputStream;
+import java.io.FileInputStream;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.io.InputStreamReader;
 import java.util.ArrayList;
-import java.util.HashMap;
-
 import java.util.Collections;
 import java.util.Comparator;
+import java.util.HashMap;
 
-import javax.swing.*;
-import javax.swing.event.*;
+import javax.swing.JButton;
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+import javax.swing.JScrollPane;
+import javax.swing.JTextArea;
+import javax.swing.event.ChangeEvent;
+import javax.swing.event.ChangeListener;
 
 /**
  * Pick-ups in a game. When the player collides with a star, the

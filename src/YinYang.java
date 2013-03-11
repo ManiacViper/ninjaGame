@@ -6,7 +6,12 @@
 
 /** Import game engine library class's */
 import org.jbox2d.common.Vec2;
-import city.soi.platform.*;
+
+import city.soi.platform.Body;
+import city.soi.platform.BodyImage;
+import city.soi.platform.CircleShape;
+import city.soi.platform.CollisionEvent;
+import city.soi.platform.CollisionListener;
 
 /**
  * Pick-ups in a game. When the player collides with a star, the

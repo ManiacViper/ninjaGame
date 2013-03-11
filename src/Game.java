@@ -7,20 +7,25 @@
 
 /** Import game engine library class's */
 
-import java.awt.*;
+import java.awt.BorderLayout;
 import java.io.IOException;
 import java.util.HashMap;
-
-
-
-import city.soi.platform.*;
-
-
 
 import javax.sound.sampled.LineUnavailableException;
 import javax.sound.sampled.UnsupportedAudioFileException;
 import javax.swing.JFrame;
+
 import org.jbox2d.common.Vec2;
+
+import city.soi.platform.Body;
+import city.soi.platform.BodyImage;
+import city.soi.platform.DebugSettings;
+import city.soi.platform.DebugViewer;
+import city.soi.platform.SoundClip;
+import city.soi.platform.StepEvent;
+import city.soi.platform.StepListener;
+import city.soi.platform.World;
+import city.soi.platform.WorldView;
 
 /**
  * The game class creates the world(physics engine) and the world view that shows the graphical interface 

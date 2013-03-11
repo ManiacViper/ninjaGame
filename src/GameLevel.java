@@ -5,8 +5,9 @@
 /**********************************************************************************************/
 
 /** Import game engine library class's */
-import city.soi.platform.*;
 import java.util.List;
+
+import city.soi.platform.Body;
 
 /**
  * Abstract class GameLevel. A game level populates a world with bodies

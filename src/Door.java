@@ -5,10 +5,13 @@
 /**********************************************************************************************/
 
 /** Import game engine library class's */
-import city.soi.platform.*;
-
-
 import org.jbox2d.common.Vec2;
+
+import city.soi.platform.Body;
+import city.soi.platform.BodyImage;
+import city.soi.platform.CollisionEvent;
+import city.soi.platform.CollisionListener;
+import city.soi.platform.PolygonShape;
 
 public class Door extends Body implements CollisionListener {
     

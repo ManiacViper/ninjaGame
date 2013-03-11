@@ -9,7 +9,11 @@
 
 import org.jbox2d.common.Vec2;
 
-import city.soi.platform.*;
+import city.soi.platform.Body;
+import city.soi.platform.BodyImage;
+import city.soi.platform.PolygonShape;
+import city.soi.platform.SlidingPlatform;
+import city.soi.platform.World;
 
 public class LevelOne extends GameLevel  {
  		
