@@ -71,13 +71,13 @@ public void populate(){
     
     Body staticPlatform8 = new Body(world, PolygonShape.makeBox(5, 5), Body.Type.STATIC);
     staticPlatform8.setPosition(new Vec2(-90, 200));
-    staticPlatform8.setImage(new BodyImage("images/shortplat1.gif", new Vec2(0,0), 1f ));
+    staticPlatform8.setImage(new BodyImage("images/shortPlat1.gif", new Vec2(0,0), 1f ));
     Body staticPlatform7 = new Body(world, PolygonShape.makeBox(5, 5), Body.Type.STATIC);
     staticPlatform7.setPosition(new Vec2(-10, 200));
-    staticPlatform7.setImage(new BodyImage("images/shortplat1.gif", new Vec2(0,0), 1f ));
+    staticPlatform7.setImage(new BodyImage("images/shortPlat1.gif", new Vec2(0,0), 1f ));
     Body staticPlatform6 = new Body(world, PolygonShape.makeBox(5, 5), Body.Type.STATIC);
     staticPlatform6.setPosition(new Vec2(70, 200));
-    staticPlatform6.setImage(new BodyImage("images/shortplat1.gif", new Vec2(0,0), 1f ));
+    staticPlatform6.setImage(new BodyImage("images/shortPlat1.gif", new Vec2(0,0), 1f ));
     
     Body staticPlatform5 = new Body(world, PolygonShape.makeBox(50, 5), Body.Type.STATIC);
     staticPlatform5.setPosition(new Vec2(185, 140));

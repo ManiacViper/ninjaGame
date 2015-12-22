@@ -56,16 +56,16 @@ public void populate(){
 
     Body staticPlatform9 = new Body(world, PolygonShape.makeBox(5, 5), Body.Type.STATIC);
     staticPlatform9.setPosition(new Vec2(200, 140));
-    staticPlatform9.setImage(new BodyImage("images/shortplat1.gif", new Vec2(0,0), 1f ));
+    staticPlatform9.setImage(new BodyImage("images/shortPlat1.gif", new Vec2(0,0), 1f ));
     Body staticPlatform8 = new Body(world, PolygonShape.makeBox(10, 5), Body.Type.STATIC);
     staticPlatform8.setPosition(new Vec2(150, 100));
-    staticPlatform8.setImage(new BodyImage("images/shortplat2.gif", new Vec2(0,2), 0.6f ));
+    staticPlatform8.setImage(new BodyImage("images/shortPlat2.gif", new Vec2(0,2), 0.6f ));
     Body staticPlatform7 = new Body(world, PolygonShape.makeBox(5, 5), Body.Type.STATIC);
     staticPlatform7.setPosition(new Vec2(100, 60));
-    staticPlatform7.setImage(new BodyImage("images/shortplat1.gif", new Vec2(0,0), 1f ));
+    staticPlatform7.setImage(new BodyImage("images/shortPlat1.gif", new Vec2(0,0), 1f ));
     Body staticPlatform6 = new Body(world, PolygonShape.makeBox(10, 5), Body.Type.STATIC);
     staticPlatform6.setPosition(new Vec2(30, 30));
-    staticPlatform6.setImage(new BodyImage("images/shortplat2.gif", new Vec2(0,2), 0.6f ));
+    staticPlatform6.setImage(new BodyImage("images/shortPlat2.gif", new Vec2(0,2), 0.6f ));
       
     Body staticPlatform5 = new Body(world, PolygonShape.makeBox(10, 5), Body.Type.STATIC);
     staticPlatform5.setPosition(new Vec2(-400, -6));
