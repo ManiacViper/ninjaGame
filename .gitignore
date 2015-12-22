@@ -2,3 +2,10 @@
 *.class
 build/*
 bin/*
+
+#intellij specific
+.idea/*
+*.iml
+
+#game specific
+AllScores.txt
