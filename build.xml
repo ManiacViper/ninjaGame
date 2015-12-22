@@ -44,7 +44,6 @@
 		<delete file="${bin}/engine-3_1.jar"/>
 	</target>
 
-	<!-- wip -->
 	<target name="jar" description="creates jar file" >
 		<antcall target="clean-jars" />
 		<copy file="${lib}/engine-3_1.jar" todir="${bin}"/>
