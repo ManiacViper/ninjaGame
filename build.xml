@@ -50,7 +50,7 @@
 		<jar destfile="${bin}/jars/${game-name}.jar" basedir="${bin}">
 			<manifest>
 				<attribute name="Main-Class" value="Game"/>
-				<attribute name="Class-Path" value="../engine-3_1.jar"/><!-- cannot recognise java.lang.NoClassDefFoundError: city/soi/platform/StepListener -->
+				<attribute name="Class-Path" value="../engine-3_1.jar"/>
 			</manifest>
 		</jar>
 	</target>
