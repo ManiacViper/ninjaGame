@@ -12,6 +12,7 @@
 	<property name="lib" location="lib" />
 	<property name="images" location="images" />	
 	<property name="sound" location="sound" />	
+	<property name="game-name" value="kenfu" />
 
 	<!-- Create the build directory structure used by compile -->
 	<target name="init">
@@ -36,6 +37,23 @@
 	<target name="clean" description="delete all build files" >
 		<delete dir="${build}"/>
 		<delete dir="${bin}"/>
+	</target>
+
+	<target name="clean-jars" description="delete all build files" >
+		<delete file="${bin}/jars/${game-name}.jar"/>
+		<delete file="${bin}/engine-3_1.jar"/>
+	</target>
+
+	<!-- wip -->
+	<target name="jar" description="creates jar file" >
+		<antcall target="clean-jars" />
+		<copy file="${lib}/engine-3_1.jar" todir="${bin}"/>
+		<jar destfile="${bin}/jars/${game-name}.jar" basedir="${bin}">
+			<manifest>
+				<attribute name="Main-Class" value="Game"/>
+				<attribute name="Class-Path" value="../engine-3_1.jar"/><!-- cannot recognise java.lang.NoClassDefFoundError: city/soi/platform/StepListener -->
+			</manifest>
+		</jar>
 	</target>
 
 </project>
